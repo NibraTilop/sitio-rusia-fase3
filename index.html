@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descubre la cultura, historia y belleza de Rusia">
+    <title>Conociendo Rusia</title>
+    <link rel="preload" href="css/estilos.css" as="style">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="css/estilos.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.webp" alt="Logo" width="150" height="50" loading="lazy" style="max-width:100%;height:auto;">
+        </div>
+        <button class="menu-toggle" aria-label="Abrir menú">
+            <i class="fas fa-bars"></i>
+        </button>
+        
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="#" id="nav-inicio">Inicio</a></li>
+                <li><a href="#" id="nav-historia">Historia y Cultura</a></li>
+                <li><a href="#" id="nav-turismo">Turismo</a></li>
+                <li><a href="#" id="nav-economia">Economía y Tecnología</a></li>
+                <li><a href="#" id="nav-gastronomia">Gastronomía</a></li>
+                <li><a href="#" id="nav-contacto">Contáctenos</a></li>
+            </ul>
+        </nav>
+
+         <div class="idioma">
+            <select id="idioma">
+                <option value="es">Español</option>
+                <option value="en">Inglés</option>
+                <option value="ru">Ruso</option>
+            </select>
+        </div>
+    </header>
+    <script>
+        // Menú móvil
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('.nav-menu').classList.toggle('active');
+        });
+    </script>
+    
+    
+    <section class="banner">
+        <div class="banner-content">
+            <h1 id="titulo">Rusia: Un país único e histórico</h1>
+            <a href="#" class="btn" id="btn-mas">Conocer más</a>
+        </div>
+    </section>
+    
+
+    <div class="contenedor-secciones">
+        <section class="seccion">
+            <h2>Historia y Cultura</h2>
+            <div class="tarjetas">
+                <div class="tarjeta">
+                    <img src="images/historia.webp" alt="Historia de Rusia">
+                    <h3>Historia de Rusia</h3>
+                    <p>Conoce la rica historia de Rusia, desde los zares hasta la era soviética.</p>
+                </div>
+                <div class="tarjeta">
+                    <img src="images/cultura.webp" alt="Cultura Rusa">
+                    <h3>Cultura Rusa</h3>
+                    <p>Descubre las tradiciones, el arte y la literatura que definen a Rusia.</p>
+                </div>
+            </div>
+        </section>
+    
+        <section class="seccion">
+            <h2>Turismo</h2>
+            <div class="tarjetas">
+                <div class="tarjeta">
+                    <img src="images/moscu.webp" alt="Moscú">
+                    <h3>Moscú</h3>
+                    <p>Explora la majestuosa Plaza Roja, el Kremlin y otros lugares icónicos.</p>
+                </div>
+                <div class="tarjeta">
+                    <img src="images/san_petesburgo.webp" alt="San Petersburgo">
+                    <h3>San Petersburgo</h3>
+                    <p>La "Venecia del Norte" con su impresionante arquitectura y cultura.</p>
+                </div>
+            </div>
+        </section>
+    
+        <section class="seccion">
+            <h2>Economía y Tecnología</h2>
+            <div class="tarjetas">
+                <div class="tarjeta">
+                    <img src="images/enonomia.webp" alt="Economía de Rusia">
+                    <h3>Economía de Rusia</h3>
+                    <p>Descubre cómo Rusia se posiciona en el mercado global con su industria energética y más.</p>
+                </div>
+                <div class="tarjeta">
+                    <img src="images/tecnologia.webp" alt="Tecnología en Rusia">
+                    <h3>Innovación y Tecnología</h3>
+                    <p>Desde la exploración espacial hasta la inteligencia artificial, Rusia avanza en tecnología.</p>
+                </div>
+            </div>
+        </section>
+    
+        <section class="seccion">
+            <h2>Gastronomía</h2>
+            <div class="tarjetas">
+                <div class="tarjeta">
+                    <img src="images/borsch.webp" alt="Borsch">
+                    <h3>Borsch</h3>
+                    <p>Una sopa tradicional rusa a base de remolacha y carne, con un sabor inconfundible.</p>
+                </div>
+                <div class="tarjeta">
+                    <img src="images/blini.webp" alt="Blini">
+                    <h3>Blini</h3>
+                    <p>Deliciosos panqueques rusos que pueden servirse con crema agria, miel o caviar.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <section class="multimedia">
+        <h2>Multimedia</h2>
+        <div class="multimedia-container"> 
+            <div class="multimedia-section">
+                <h3>Rusia en Video</h3>
+                <iframe width="100%" height="200" src="https://www.youtube.com/embed/S_dfq9rFWAE?si=sj51EkAx6x4TPOjg" frameborder="0" allowfullscreen></iframe>
+                <iframe width="100%" height="200" src="https://www.youtube.com/embed/lyh2kAjcmSY?si=zIr2sOzMFJSuzWak" frameborder="0" allowfullscreen></iframe>
+                <iframe width="100%" height="200" src="https://www.youtube.com/embed/HtkXJ1bztC4?si=1kIUb29_sx77HUxa" frameborder="0" allowfullscreen></iframe>
+                <iframe width="100%" height="200" src="https://www.youtube.com/embed/ozX-tHb2pMk?si=_wBbplEvlR4kOCb_" frameborder="0" allowfullscreen></iframe>
+            </div>
+            
+            <div class="multimedia-section">
+                <h3>Galería Fotográfica</h3>
+                <div class="gallery">
+                    <img src="images/galeria1.webp" alt="Rusia 1">
+                    <img src="images/galeria2.webp" alt="Rusia 2">
+                    <img src="images/galeria3.webp" alt="Rusia 3">
+                    <img src="images/galeria4.webp" alt="Rusia 4">
+                </div>
+            </div>
+        </div>
+    </section>    
+    <footer>
+        <div class="footer-container">
+            <div class="footer-links">
+                <a href="#">Turismo</a>
+                <a href="#">Cultura</a>
+                <a href="#">Contacto</a>
+            </div>
+            
+            <div class="footer-social">
+                <a href="#"><img src="images/facebook.webp" alt="Facebook"></a>
+                <a href="#"><img src="images/instagram.webp" alt="Instagram"></a>
+                <a href="#"><img src="images/x.webp" alt="X"></a>
+            </div>
+    
+            <div class="footer-contact">
+                <p>Email: apolitb@unadvirtual.edu.co</p>
+                <p>Teléfono: +593 637 4313</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+        
+        menuToggle.addEventListener('click', function() {
+            navMenu.classList.toggle('active');
+            this.classList.toggle('active');
+        });
+        
+        
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                menuToggle.classList.remove('active');
+            });
+        });
+    </script>    
+</body>
+</html>
