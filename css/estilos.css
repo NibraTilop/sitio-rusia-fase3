@@ -36,6 +36,15 @@
     z-index: 1;
     padding: 20px;
 }
+.menu li a {
+    transition: background-color 0.3s ease;
+}
+
+.menu li a:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
 
 
 .contenedor-secciones {
@@ -479,4 +488,71 @@ footer {
     .banner-content {
         padding: 0 15px;
     }
+
+    .mensaje-bienvenida {
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 15px;
+    background-color: #e6f0ff;
+    color: #003366;
+    margin-bottom: 20px;
+}
+
+}
+
+.slider-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 20px auto;
+    max-width: 600px;
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.slider-container img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+}
+.slider-container button {
+    background-color: #004da6;
+    color: white;
+    border: none;
+    font-size: 24px;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.slider-container button:hover {
+    background-color: #003580;
+}
+
+.nav-menu ul li.submenu {
+    position: relative;
+}
+.submenu-items {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+.submenu-items li a {
+    display: block;
+    padding: 10px 20px;
+    color: #004da6;
+    white-space: nowrap;
+}
+.submenu-items li a:hover {
+    background-color: #f0f0f0;
+}
+.submenu:hover .submenu-items {
+    display: block;
 }
