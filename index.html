@@ -25,7 +25,14 @@
                 <li><a href="#" id="nav-historia">Historia y Cultura</a></li>
                 <li><a href="#" id="nav-turismo">Turismo</a></li>
                 <li><a href="#" id="nav-economia">Economía y Tecnología</a></li>
-                <li><a href="#" id="nav-gastronomia">Gastronomía</a></li>
+                <li class="submenu">
+    <a href="#">Gastronomía</a>
+    <ul class="submenu-items">
+        <li><a href="#">Borsch</a></li>
+        <li><a href="#">Blini</a></li>
+        <li><a href="#">Pelmeni</a></li>
+    </ul>
+</li>
                 <li><a href="#" id="nav-contacto">Contáctenos</a></li>
             </ul>
         </nav>
@@ -39,7 +46,7 @@
         </div>
     </header>
     <script>
-        // Menú móvil
+    
         document.querySelector('.menu-toggle').addEventListener('click', function() {
             document.querySelector('.nav-menu').classList.toggle('active');
         });
@@ -53,6 +60,14 @@
         </div>
     </section>
     
+    <div id="mensaje-bienvenida" class="mensaje-bienvenida"></div>
+
+    
+    <div class="slider-container">
+        <button id="prev">⟨</button>
+        <img id="slider" src="images/galeria1.webp" alt="Slider de imágenes" />
+        <button id="next">⟩</button>
+    </div>
 
     <div class="contenedor-secciones">
         <section class="seccion">
@@ -177,6 +192,9 @@
                 menuToggle.classList.remove('active');
             });
         });
-    </script>    
+    </script>
+    <script src="js/script.js"></script>
+    
 </body>
 </html>
+
